@@ -95,7 +95,7 @@ func RunScorecards(ctx context.Context,
 	defer repoClient.Close()
 
 	commitSHA, err := getRepoCommitHash(repoClient)
-	if err != nil || commitSHA == "" {
+	if err != nil {
 		return ScorecardResult{}, err
 	}
 	versionInfo := version.GetVersionInfo()

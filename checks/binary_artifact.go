@@ -27,6 +27,7 @@ const CheckBinaryArtifacts string = "Binary-Artifacts"
 //nolint
 func init() {
 	supportedRequestTypes := []checker.RequestType{
+		checker.FileBased,
 		checker.CommitBased,
 	}
 	if err := registerCheck(CheckBinaryArtifacts, BinaryArtifacts, supportedRequestTypes); err != nil {
