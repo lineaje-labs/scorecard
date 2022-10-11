@@ -122,9 +122,7 @@ func RunScorecard(ctx context.Context,
 
 	commitSHA, err := getRepoCommitHash(repoClient)
 
-	if errors.Is(err, errEmptyRepository) {
-		return ret, nil
-	} else if err != nil {
+	if err != nil {
 		return ScorecardResult{}, err
 	}
 	ret.Repo.CommitSHA = commitSHA
