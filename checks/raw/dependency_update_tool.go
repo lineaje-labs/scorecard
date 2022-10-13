@@ -42,7 +42,12 @@ func DependencyUpdateTool(c clients.RepoClient) (checker.DependencyUpdateToolDat
 
 	commits, err := c.SearchCommits(clients.SearchCommitsOptions{Author: "dependabot[bot]"})
 	if err != nil {
-		return checker.DependencyUpdateToolData{}, fmt.Errorf("%w", err)
+		// Do not fail if client returns an unsupported error
+		if strings.Contains(err.Error(), clients.ErrUnsupportedFeature.Error()) {
+			return checker.DependencyUpdateToolData{Tools: tools}, nil
+		} else {
+			return checker.DependencyUpdateToolData{}, fmt.Errorf("%w", err)
+		}
 	}
 
 	for i := range commits {
