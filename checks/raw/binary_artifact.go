@@ -194,7 +194,12 @@ func gradleWrapperValidated(c clients.RepoClient) (bool, error) {
 		// If validated, check that latest commit has a relevant successful run
 		runs, err := c.ListSuccessfulWorkflowRuns(gradleWrapperValidatingWorkflowFile)
 		if err != nil {
-			return false, fmt.Errorf("failure listing workflow runs: %w", err)
+			// Do not fail if client returns an unsupported error
+			if strings.Contains(err.Error(), clients.ErrUnsupportedFeature.Error()) {
+				return false, nil
+			} else {
+				return false, fmt.Errorf("failure listing workflow runs: %w", err)
+			}
 		}
 		commits, err := c.ListCommits()
 		if err != nil {
