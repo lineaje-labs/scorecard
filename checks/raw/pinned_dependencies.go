@@ -390,7 +390,13 @@ var validateGitHubWorkflowIsFreeOfInsecureDownloads fileparser.DoWhileTrueOnFile
 			// https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsrun.
 			shell, err := fileparser.GetShellForStep(step, job)
 			if err != nil {
-				return false, err
+				// Issues might occur in getting a step's os from the workflow yaml
+				// Hence, skip to next iteration if error occurs
+				if !strings.Contains(err.Error(), "unable to determine OS for job:") {
+					return false, err
+				} else {
+					continue
+				}
 			}
 			// Skip unsupported shells. We don't support Windows shells or some Unix shells.
 			if !isSupportedShell(shell) {
