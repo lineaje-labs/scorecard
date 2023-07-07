@@ -1,4 +1,4 @@
-module github.com/ossf/scorecard/v5
+module github.com/lineaje-labs/scorecard/v5
 
 go 1.22.10
 
