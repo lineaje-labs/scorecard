@@ -1,4 +1,4 @@
-module github.com/ossf/scorecard/v4
+module github.com/lineaje-labs/scorecard/v4
 
 go 1.19
 
