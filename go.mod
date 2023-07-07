@@ -205,3 +205,5 @@ replace (
 	// This replace is for https://github.com/advisories/GHSA-25xm-hr59-7c27
 	github.com/ulikunitz/xz => github.com/ulikunitz/xz v0.5.8
 )
+
+replace github.com/ossf/scorecard/v4 v4.11.0-lineaje => github.com/lineaje-labs/scorecard/v4 v4.11.0-lineaje
