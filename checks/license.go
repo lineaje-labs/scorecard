@@ -29,6 +29,7 @@ const CheckLicense = "License"
 //nolint:gochecknoinits
 func init() {
 	supportedRequestTypes := []checker.RequestType{
+		checker.FileBased,
 		checker.CommitBased,
 	}
 	if err := registerCheck(CheckLicense, License, supportedRequestTypes); err != nil {
