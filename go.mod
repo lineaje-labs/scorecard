@@ -50,6 +50,7 @@ require (
 	github.com/google/osv-scanner v1.3.4
 	github.com/mcuadros/go-jsonschema-generator v0.0.0-20200330054847-ba7a369d4303
 	github.com/onsi/ginkgo/v2 v2.11.0
+	github.com/ossf/scorecard/v4 v4.0.0-00010101000000-000000000000
 	github.com/otiai10/copy v1.12.0
 	sigs.k8s.io/release-utils v0.6.0
 )
@@ -205,3 +206,5 @@ replace (
 	// This replace is for https://github.com/advisories/GHSA-25xm-hr59-7c27
 	github.com/ulikunitz/xz => github.com/ulikunitz/xz v0.5.8
 )
+
+replace github.com/ossf/scorecard/v4 => github.com/lineaje-labs/scorecard/v4 v4.11.0-1-lineaje
