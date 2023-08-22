@@ -26,6 +26,7 @@ require (
 	github.com/moby/buildkit v0.12.1
 	github.com/olekukonko/tablewriter v0.0.5
 	github.com/onsi/gomega v1.27.10
+	github.com/ossf/scorecard/v4 v4.0.0-00010101000000-000000000000
 	github.com/shurcooL/githubv4 v0.0.0-20201206200315-234843c633fa
 	github.com/shurcooL/graphql v0.0.0-20200928012149-18c5c3165e3a
 	github.com/sirupsen/logrus v1.9.3
@@ -207,3 +208,5 @@ replace (
 	// This replace is for https://github.com/advisories/GHSA-25xm-hr59-7c27
 	github.com/ulikunitz/xz => github.com/ulikunitz/xz v0.5.8
 )
+
+replace github.com/ossf/scorecard/v4 => github.com/lineaje-labs/scorecard/v4 v4.12.0-1-lineaje
