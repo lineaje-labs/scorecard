@@ -53,6 +53,7 @@ func isTestdataFile(fullpath string) bool {
 	// testdata/ or /some/dir/testdata/some/other
 	return strings.HasPrefix(fullpath, "testdata/") ||
 		strings.Contains(fullpath, "/testdata/") ||
+		strings.HasPrefix(fullpath, ".git/") ||
 		strings.HasPrefix(fullpath, "src/test/") ||
 		strings.Contains(fullpath, "/src/test/")
 }
