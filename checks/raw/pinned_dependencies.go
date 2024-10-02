@@ -308,7 +308,11 @@ var validateShellScriptIsFreeOfInsecureDownloads fileparser.DoWhileTrueOnFileCon
 	}
 
 	if err := validateShellFile(pathfn, 0, 0, content, map[string]bool{}, pdata); err != nil {
-		return false, nil
+		// Do not fail if client returns a shell parsing error.
+		// Parsing error may be generated due to commonly used and unsupported "((" ambiguity
+		if !strings.Contains(err.Error(), sce.ErrShellParsing.Error()) {
+			return false, nil
+		}
 	}
 
 	return true, nil
@@ -387,7 +391,11 @@ var validateDockerfileInsecureDownloads fileparser.DoWhileTrueOnFileContent = fu
 				lineCount := startOffset + strings.Count(cmd, "\n")
 				if err := validateShellFile(pathfn, uint(child.StartLine+startOffset)-1, uint(child.StartLine+lineCount)-2,
 					[]byte(cmd), taintedFiles, pdata); err != nil {
-					return false, err
+					// Do not fail if client returns a shell parsing error.
+					// Parsing error may be generated due to commonly used and unsupported "((" ambiguity
+					if !strings.Contains(err.Error(), sce.ErrShellParsing.Error()) {
+						return false, err
+					}
 				}
 				startOffset += lineCount
 			}
@@ -405,7 +413,11 @@ var validateDockerfileInsecureDownloads fileparser.DoWhileTrueOnFileContent = fu
 			cmd := strings.Join(valueList, " ")
 			if err := validateShellFile(pathfn, uint(child.StartLine)-1, uint(child.EndLine)-1,
 				[]byte(cmd), taintedFiles, pdata); err != nil {
-				return false, err
+				// Do not fail if client returns a shell parsing error.
+				// Parsing error may be generated due to commonly used and unsupported "((" ambiguity
+				if !strings.Contains(err.Error(), sce.ErrShellParsing.Error()) {
+					return false, err
+				}
 			}
 		}
 	}
