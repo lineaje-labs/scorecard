@@ -121,8 +121,8 @@ func listFiles(clientPath string, logger *log.Logger) ([]string, error) {
 
 		return nil
 	})
-	if err != nil {
-		return nil, fmt.Errorf("error walking the path %q: %w", clientPath, err)
+	if err != nil { // If any files were found, then return them, and let the caller choose to process it
+		return files, fmt.Errorf("error walking the path %q: %w", clientPath, err)
 	}
 
 	return files, nil
@@ -133,7 +133,8 @@ func applyPredicate(
 	errFiles error,
 	predicate func(string) (bool, error),
 ) ([]string, error) {
-	if errFiles != nil {
+	// If there was an error and no client files were found, then return here; else process client files at best effort
+	if errFiles != nil && len(clientFiles) == 0 {
 		return nil, errFiles
 	}
 
