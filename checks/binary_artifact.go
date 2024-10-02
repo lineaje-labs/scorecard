@@ -29,6 +29,7 @@ const CheckBinaryArtifacts string = "Binary-Artifacts"
 //nolint:gochecknoinits
 func init() {
 	supportedRequestTypes := []checker.RequestType{
+		checker.FileBased,
 		checker.CommitBased,
 		checker.FileBased,
 	}
