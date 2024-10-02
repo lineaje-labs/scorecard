@@ -97,6 +97,12 @@ func listFiles(clientPath string, logger *log.Logger) ([]string, error) {
 			return fmt.Errorf("failure accessing path %q: %w", pathfn, err)
 		}
 
+		// Ignore files that does not exist. e.g - If it is a symlink and the target does not exist
+		_, err = os.Stat(pathfn)
+		if os.IsNotExist(err) {
+			return nil
+		}
+
 		// Skip directories.
 		d, err := isDir(pathfn)
 		if err != nil {
