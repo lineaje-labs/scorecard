@@ -210,3 +210,5 @@ require (
 	google.golang.org/grpc v1.70.0 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 )
+
+replace github.com/ossf/scorecard/v5 => github.com/lineaje-labs/scorecard/v5 v5.1.1-1-lineaje
