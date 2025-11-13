@@ -29,6 +29,7 @@ require (
 	github.com/onsi/ginkgo/v2 v2.34.0
 	github.com/onsi/gomega v1.44.0
 	github.com/ossf/osv-schema/bindings/go v0.0.0-20261026052736-6410c13304f9
+	github.com/ossf/scorecard/v5 v5.7.0
 	github.com/otiai10/copy v1.14.1
 	github.com/shurcooL/githubv4 v0.0.0-20201206200315-234843c633fa
 	github.com/shurcooL/graphql v0.0.0-20200928012149-18c5c3165e3a

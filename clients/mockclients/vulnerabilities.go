@@ -28,7 +28,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	clients "github.com/ossf/scorecard/v5/clients"
+	clients "github.com/lineaje-labs/scorecard/v5/clients"
 	gomock "go.uber.org/mock/gomock"
 )
 
