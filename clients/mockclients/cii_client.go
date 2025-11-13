@@ -24,7 +24,7 @@ import (
 	reflect "reflect"
 
 	gomock "go.uber.org/mock/gomock"
-	clients "github.com/ossf/scorecard/v5/clients"
+	clients "github.com/lineaje-labs/scorecard/v5/clients"
 )
 
 // MockCIIBestPracticesClient is a mock of CIIBestPracticesClient interface.
