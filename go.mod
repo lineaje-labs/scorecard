@@ -315,4 +315,5 @@ replace (
 	// pinned until https://github.com/containerd/containerd/issues/12493 is resolved and containerd/containerd handles the new runtime spec.
 	github.com/containerd/cgroups/v3 => github.com/containerd/cgroups/v3 v3.1.2
 	github.com/opencontainers/runtime-spec => github.com/opencontainers/runtime-spec v1.2.1
+	github.com/ossf/scorecard/v5 => github.com/lineaje-labs/scorecard/v5 v5.4.0-1-lineaje
 )
