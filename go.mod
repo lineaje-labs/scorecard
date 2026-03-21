@@ -133,7 +133,6 @@ require (
 	github.com/envoyproxy/go-control-plane/envoy v1.36.0 // indirect
 	github.com/envoyproxy/protoc-gen-validate v1.3.0 // indirect
 	github.com/erikvarga/go-rpmdb v0.0.0-20250523120114-a15a62cd4593 // indirect
-	github.com/evanphx/json-patch v5.6.0+incompatible // indirect
 	github.com/felixge/httpsnoop v1.0.4 // indirect
 	github.com/go-errors/errors v1.0.2 // indirect
 	github.com/go-jose/go-jose/v4 v4.1.3 // indirect
@@ -327,6 +326,6 @@ replace (
 	// pinned until https://github.com/containerd/containerd/issues/12493 is resolved and containerd/containerd handles the new runtime spec.
 	github.com/containerd/cgroups/v3 => github.com/containerd/cgroups/v3 v3.1.2
 	github.com/opencontainers/runtime-spec => github.com/opencontainers/runtime-spec v1.2.1
-	github.com/ossf/scorecard/v5 => github.com/lineaje-labs/scorecard/v5 v5.4.0-1-lineaje
+	github.com/ossf/scorecard/v5 => github.com/lineaje-labs/scorecard/v5 v5.4.0-2-lineaje
 	google.golang.org/grpc => google.golang.org/grpc v1.79.3
 )
