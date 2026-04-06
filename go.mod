@@ -17,7 +17,7 @@ require (
 	github.com/grafeas/kritis v0.2.3-0.20210120183821-faeba81c520c
 	github.com/h2non/filetype v1.1.3
 	github.com/jszwec/csvutil v1.10.0
-	github.com/moby/buildkit v0.28.0
+	github.com/moby/buildkit v0.28.1
 	github.com/olekukonko/tablewriter v1.0.9
 	github.com/onsi/gomega v1.38.2
 	github.com/ossf/scorecard/v5 v5.4.0
@@ -325,6 +325,7 @@ require (
 replace (
 	// pinned until https://github.com/containerd/containerd/issues/12493 is resolved and containerd/containerd handles the new runtime spec.
 	github.com/containerd/cgroups/v3 => github.com/containerd/cgroups/v3 v3.1.2
+	github.com/go-jose/go-jose/v4 => github.com/go-jose/go-jose/v4 v4.1.4
 	github.com/opencontainers/runtime-spec => github.com/opencontainers/runtime-spec v1.2.1
 	github.com/ossf/scorecard/v5 => github.com/lineaje-labs/scorecard/v5 v5.4.0-2-lineaje
 	google.golang.org/grpc => google.golang.org/grpc v1.79.3
