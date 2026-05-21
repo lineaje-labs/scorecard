@@ -327,7 +327,7 @@ replace (
 	github.com/containerd/cgroups/v3 => github.com/containerd/cgroups/v3 v3.1.2
 	github.com/go-jose/go-jose/v4 => github.com/go-jose/go-jose/v4 v4.1.4
 	github.com/opencontainers/runtime-spec => github.com/opencontainers/runtime-spec v1.2.1
-	github.com/ossf/scorecard/v5 => github.com/lineaje-labs/scorecard/v5 v5.4.0-4-lineaje
+	github.com/ossf/scorecard/v5 => github.com/lineaje-labs/scorecard/v5 v5.4.0-5-lineaje
 	go.opentelemetry.io/otel/sdk => go.opentelemetry.io/otel/sdk v1.43.0
 	google.golang.org/grpc => google.golang.org/grpc v1.79.3
 )
