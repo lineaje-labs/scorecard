@@ -4199,8 +4199,8 @@ github.com/lestrrat-go/jwx v1.2.25/go.mod h1:zoNuZymNl5lgdcu6P7K6ie2QRll5HVfF4xw
 github.com/lestrrat-go/option v1.0.0/go.mod h1:5ZHFbivi4xwXxhxY9XHDe2FHo6/Z7WWmtT7T5nBBp3I=
 github.com/lightstep/lightstep-tracer-common/golang/gogo v0.0.0-20190605223551-bc2310a04743/go.mod h1:qklhhLq1aX+mtWk9cPHPzaBjWImj5ULL6C7HFJtXQMM=
 github.com/lightstep/lightstep-tracer-go v0.18.1/go.mod h1:jlF1pusYV4pidLvZ+XD0UBX0ZE6WURAspgAczcDHrL4=
-github.com/lineaje-labs/scorecard/v5 v5.4.0-5-lineaje h1:TV9vWqHEbGCwan9038vNWLEuM6GkRO8EvR8XGZgVaLI=
-github.com/lineaje-labs/scorecard/v5 v5.4.0-5-lineaje/go.mod h1:u4lnIGjnp7+u+UHbfuNySvYsYyCk8gmVt6mz/z6udo8=
+github.com/lineaje-labs/scorecard/v5 v5.4.0-6-lineaje h1:drr3H17Ui0/COg6jpghw1qUaxxYU2ePwjoWqFojvPHg=
+github.com/lineaje-labs/scorecard/v5 v5.4.0-6-lineaje/go.mod h1:fN5iKTtNsz+HyopMxPeFXGKVdu0Fhsi2jUaKBhOofOk=
 github.com/linuxkit/virtsock v0.0.0-20201010232012-f8cee7dfc7a3/go.mod h1:3r6x7q95whyfWQpmGZTu3gk3v2YkMi05HEzl7Tf7YEo=
 github.com/lunixbochs/struc v0.0.0-20241101090106-8d528fa2c543 h1:GxMuVb9tJajC1QpbQwYNY1ZAo1EIE8I+UclBjOfjz/M=
 github.com/lunixbochs/struc v0.0.0-20241101090106-8d528fa2c543/go.mod h1:vy1vK6wD6j7xX6O6hXe621WabdtNkou2h7uRtTfRMyg=
