@@ -309,6 +309,9 @@ require (
 replace (
 	// pinned until https://github.com/containerd/containerd/issues/12493 is resolved and containerd/containerd handles the new runtime spec.
 	github.com/containerd/cgroups/v3 => github.com/containerd/cgroups/v3 v3.1.2
+	// pinned post-api-split so the old vendored api/services/* tree doesn't collide with github.com/containerd/containerd/api
+	// (pulled in transitively via github.com/grafeas/kritis -> go-containerregistry@v0.2.1 -> containerd@v1.3.0).
+	github.com/containerd/containerd => github.com/containerd/containerd v1.7.33
 	github.com/go-jose/go-jose/v4 => github.com/go-jose/go-jose/v4 v4.1.4
 	github.com/opencontainers/runtime-spec => github.com/opencontainers/runtime-spec v1.2.1
 	github.com/ossf/scorecard/v5 => github.com/lineaje-labs/scorecard/v5 v5.4.0-5-lineaje
