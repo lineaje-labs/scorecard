@@ -314,7 +314,7 @@ replace (
 	github.com/containerd/containerd => github.com/containerd/containerd v1.7.33
 	github.com/go-jose/go-jose/v4 => github.com/go-jose/go-jose/v4 v4.1.4
 	github.com/opencontainers/runtime-spec => github.com/opencontainers/runtime-spec v1.2.1
-	github.com/ossf/scorecard/v5 => github.com/lineaje-labs/scorecard/v5 v5.4.0-5-lineaje
+	github.com/ossf/scorecard/v5 => github.com/lineaje-labs/scorecard/v5 v5.4.0-6-lineaje
 	go.opentelemetry.io/otel/sdk => go.opentelemetry.io/otel/sdk v1.43.0
 	go.yaml.in/yaml/v4 => go.yaml.in/yaml/v4 v4.0.0-rc.3
 	golang.org/x/crypto => golang.org/x/crypto v0.56.0
