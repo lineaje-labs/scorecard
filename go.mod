@@ -1,6 +1,6 @@
 module github.com/lineaje-labs/scorecard/v5
 
-go 1.26.9
+go 1.26.10
 
 require (
 	cloud.google.com/go/bigquery v1.74.0
