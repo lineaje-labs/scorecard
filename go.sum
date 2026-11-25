@@ -398,6 +398,8 @@ github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
 github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
 github.com/kr/text v0.2.0 h1:5Nx0Ya0ZqY2ygV366QzturHI13Jq95ApcVaJBhpS+AY=
 github.com/kr/text v0.2.0/go.mod h1:eLer722TekiGuMkidMxC/pM04lWEeraHUUmBw8l2grE=
+github.com/lineaje-labs/scorecard/v5 v5.7.0-1-lineaje h1:pJ2bs9UJ/aRqIiWH2Ia1SQXfMYCx2SO4MZnPNUbXNdQ=
+github.com/lineaje-labs/scorecard/v5 v5.7.0-1-lineaje/go.mod h1:rGmIYzTHoVlT3gSCK3u7ZArbFihMXHWZYdkZx+Yb5aQ=
 github.com/lunixbochs/struc v0.0.0-20241101090106-8d528fa2c543 h1:GxMuVb9tJajC1QpbQwYNY1ZAo1EIE8I+UclBjOfjz/M=
 github.com/lunixbochs/struc v0.0.0-20241101090106-8d528fa2c543/go.mod h1:vy1vK6wD6j7xX6O6hXe621WabdtNkou2h7uRtTfRMyg=
 github.com/maruel/natural v1.3.0 h1:VsmCsBmEyrR46RomtgHs5hbKADGRVtliHTyCOLFBpsg=
@@ -460,8 +462,6 @@ github.com/opencontainers/runtime-spec v1.3.0 h1:YZupQUdctfhpZy3TM39nN9Ika5CBWT5
 github.com/opencontainers/runtime-spec v1.3.0/go.mod h1:jwyrGlmzljRJv/Fgzds9SsS/C5hL+LL3ko9hs6T5lQ0=
 github.com/ossf/osv-schema/bindings/go v0.0.0-20261026052736-6410c13304f9 h1:fAbDzdGbPrOkD4GmSxdHmPmDAgDZJDIjKMZ1DVUuYFM=
 github.com/ossf/osv-schema/bindings/go v0.0.0-20261026052736-6410c13304f9/go.mod h1:aW9XJyUJfg0r+HogMGMagTt4hF6ibBkH/FZenG/KiyE=
-github.com/ossf/scorecard/v5 v5.7.0 h1:JGP8vX/DgHbhOXnBPlhRY6pVKmlzqvuyfCBIFZ7Zmb8=
-github.com/ossf/scorecard/v5 v5.7.0/go.mod h1:2mm8hnRFM4NN3X97sIUiLH2hvlbWCJx5jt5zUk+dkGg=
 github.com/otiai10/copy v1.14.1 h1:5/7E6qsUMBaH5AnQ0sSLzzTg1oTECmcCmT6lvF45Na8=
 github.com/otiai10/copy v1.14.1/go.mod h1:oQwrEDDOci3IM8dJF0d8+jnbfPDllW6vUjNc3DoZm9I=
 github.com/otiai10/mint v1.6.3 h1:87qsV/aw1F5as1eH1zS/yqHY85ANKVMgkDrf9rcxbQs=
